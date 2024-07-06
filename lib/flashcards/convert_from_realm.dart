@@ -1,4 +1,3 @@
-import 'package:empty_widget/empty_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:study_deck/flashcards/flashcard.dart';
 import 'package:study_deck/flashcards/cardItem_factories/item_factory.dart';
@@ -38,8 +37,8 @@ class ConvertFromRealm {
     List<Widget> cardItems = [];
     for (int j = 0; j < cardSide.length; j++) {
       for (int i = 0; i < allFactories.length; i++) {
-        Widget item = allFactories[i].convertToWidget(cardSide[j]);
-        if (item is! EmptyWidget) {
+        Widget? item = allFactories[i].convertToWidget(cardSide[j]);
+        if (item != null) {
           cardItems.add(item);
         }
       }

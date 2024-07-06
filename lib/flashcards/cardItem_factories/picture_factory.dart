@@ -1,4 +1,3 @@
-import 'package:empty_widget/empty_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:study_deck/flashcards/cardItem_factories/item_factory.dart';
 import 'package:study_deck/flashcards/card_storage_schema/studycard.dart';
@@ -9,11 +8,11 @@ class PictureFactory extends ItemFactory {
   const PictureFactory();
 
   @override
-  Widget convertToWidget(StudyCardItem item) {
+  Widget? convertToWidget(StudyCardItem item) {
     if (item.widgetName == 'picture') {
       return StudyPicture(isOnFront: item.isOnFront, imageLink: item.content);
     } else {
-      return EmptyWidget();
+      return null;
     }
   }
 }
