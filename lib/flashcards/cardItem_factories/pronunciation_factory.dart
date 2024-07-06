@@ -9,7 +9,7 @@ class PronunciationFactory extends ItemFactory {
 
   @override
   Widget? convertToWidget(StudyCardItem item) {
-    if (item.widgetName == 'pronunciation') {
+    if (item.widgetName == 'StudyPronunciation') {
       return StudyPronunciation(
           isOnFront: item.isOnFront, pronunciation: item.content);
     } else {

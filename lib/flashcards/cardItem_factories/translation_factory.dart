@@ -9,7 +9,7 @@ class TranslationFactory extends ItemFactory {
 
   @override
   Widget? convertToWidget(StudyCardItem item) {
-    if (item.widgetName == 'translation') {
+    if (item.widgetName == 'StudyTranslation') {
       return StudyTranslation(
           isOnFront: item.isOnFront, translation: item.content);
     } else {

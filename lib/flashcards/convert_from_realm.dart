@@ -25,7 +25,7 @@ class ConvertFromRealm {
     List<StudyCard> allCards = theCards.toList();
     for (int i = 0; i < allCards.length; i++) {
       List<Widget> front = convertToWidgetList(allCards[i].frontContent);
-      List<Widget> back = convertToWidgetList(allCards[i].frontContent);
+      List<Widget> back = convertToWidgetList(allCards[i].backContent);
       flashcards.add(Flashcard(frontContent: front, backContent: back));
     }
 

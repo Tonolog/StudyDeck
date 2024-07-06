@@ -9,7 +9,7 @@ class AudioFactory extends ItemFactory {
 
   @override
   Widget? convertToWidget(StudyCardItem item) {
-    if (item.widgetName == 'audio') {
+    if (item.widgetName == 'StudyAudio') {
       return StudyAudio(isOnFront: item.isOnFront, audioLink: item.content);
     } else {
       return null;

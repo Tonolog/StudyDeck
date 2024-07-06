@@ -9,7 +9,7 @@ class DefinitionFactory extends ItemFactory {
 
   @override
   Widget? convertToWidget(StudyCardItem item) {
-    if (item.widgetName == 'definition') {
+    if (item.widgetName == 'StudyDefinition') {
       return StudyDefinition(
           isOnFront: item.isOnFront, definition: item.content);
     } else {

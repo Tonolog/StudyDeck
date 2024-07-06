@@ -9,7 +9,7 @@ class WordFactory extends ItemFactory {
 
   @override
   Widget? convertToWidget(StudyCardItem item) {
-    if (item.widgetName == 'word') {
+    if (item.widgetName == 'StudyWord') {
       return StudyWord(isOnFront: item.isOnFront, vocabWord: item.content);
     } else {
       return null;

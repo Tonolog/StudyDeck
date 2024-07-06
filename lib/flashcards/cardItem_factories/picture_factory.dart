@@ -9,7 +9,7 @@ class PictureFactory extends ItemFactory {
 
   @override
   Widget? convertToWidget(StudyCardItem item) {
-    if (item.widgetName == 'picture') {
+    if (item.widgetName == 'StudyPicture') {
       return StudyPicture(isOnFront: item.isOnFront, imageLink: item.content);
     } else {
       return null;

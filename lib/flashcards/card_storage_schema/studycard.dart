@@ -18,9 +18,9 @@ class _StudyCard {
 
 /*  Class: _CardItem private class single unit to be displayed on flashcard
     Parameters: id,         ObjectID, unique identifier
-                widgetName, String,   widgets include audio, definition, 
-                                      picture, pronunciation, translation,
-                                      word
+                widgetName, String,   widgets include StudyAudio, StudyDefinition, 
+                                      StudyPicture, StudyPronunciation, StudyTranslation,
+                                      StudyWord
                 content,    String,   A link for audio, pronunciation, and
                                       picture, Actual content for definition,
                                       translation, and word
