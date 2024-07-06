@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:study_deck/flashcards/flashcard.dart';
-// import 'package:study_deck/flashcards/hard_coded_deck.dart';
 import 'package:study_deck/flashcards/card_storage_schema/studycard.dart';
 import 'package:realm/realm.dart';
-import 'package:study_deck/flashcards/realm_to_widget.dart';
+import 'package:study_deck/flashcards/convert_from_realm.dart';
 
 /*  Class:  StudyPage, handles UI functionality for studying
     Parameters: title,  String, page title to be displayed 
@@ -22,7 +21,8 @@ class _StudyPage extends State<StudyPage> {
   // The database
   late Realm realm;
   late RealmResults<StudyCard> studycards;
-  late List<Flashcard> theCards = realmListToFlashcards(studycards);
+  late List<Flashcard> theCards =
+      ConvertFromRealm().realmListToFlashcards(studycards);
   late Flashcard currCard = theCards[0];
 
   @override
