@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:study_deck/screens/create_card.dart';
 import 'package:study_deck/screens/studypage.dart';
 
 void main() {

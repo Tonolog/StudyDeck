@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:study_deck/flashcards/flashcard.dart';
-import 'package:study_deck/flashcards/cardItem_factories/item_factory.dart';
+import 'package:study_deck/flashcards/card_content/cardItem_factories/item_factory.dart';
 import 'package:study_deck/flashcards/card_storage_schema/studycard.dart';
 import 'package:realm/realm.dart';
 
-import 'package:study_deck/flashcards/cardItem_factories/audio_factory.dart';
-import 'package:study_deck/flashcards/cardItem_factories/definition_factory.dart';
-import 'package:study_deck/flashcards/cardItem_factories/picture_factory.dart';
-import 'package:study_deck/flashcards/cardItem_factories/pronunciation_factory.dart';
-import 'package:study_deck/flashcards/cardItem_factories/translation_factory.dart';
-import 'package:study_deck/flashcards/cardItem_factories/word_factory.dart';
+import 'package:study_deck/flashcards/card_content/cardItem_factories/audio_factory.dart';
+import 'package:study_deck/flashcards/card_content/cardItem_factories/definition_factory.dart';
+import 'package:study_deck/flashcards/card_content/cardItem_factories/picture_factory.dart';
+import 'package:study_deck/flashcards/card_content/cardItem_factories/pronunciation_factory.dart';
+import 'package:study_deck/flashcards/card_content/cardItem_factories/translation_factory.dart';
+import 'package:study_deck/flashcards/card_content/cardItem_factories/word_factory.dart';
 
 class ConvertFromRealm {
   // All Items Factory Constructor

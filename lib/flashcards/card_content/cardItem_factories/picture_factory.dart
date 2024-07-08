@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:study_deck/flashcards/cardItem_factories/item_factory.dart';
+import 'package:study_deck/flashcards/card_content/cardItem_factories/item_factory.dart';
 import 'package:study_deck/flashcards/card_storage_schema/studycard.dart';
 import 'package:study_deck/flashcards/card_content/card_items/study_picture.dart';
 
