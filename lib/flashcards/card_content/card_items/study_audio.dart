@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:study_deck/flashcards/card_content/card_item.dart';
+import 'package:study_deck/flashcards/card_content/card_items/card_item.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-/*  Class: StudyAudio, functionality of StudyWord's audio pronunciation
+/*  Class: StudyAudio, audio widget allows for pronunciation/example sentences
     Parameters: isOnFront,  bool,   see Item doc
-                audioLink,  String, audio link of form "audio/..."
+                audioLink,  String, path to audio file: "audio/..."
               */
 class StudyAudio extends StudyItem {
   /// Study Audio Constructor

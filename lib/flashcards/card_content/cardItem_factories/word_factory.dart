@@ -3,8 +3,9 @@ import 'package:study_deck/flashcards/card_content/cardItem_factories/item_facto
 import 'package:study_deck/flashcards/card_storage_schema/studycard.dart';
 import 'package:study_deck/flashcards/card_content/card_items/study_word.dart';
 
+///  Class: WordFactory, convert realm vocab word to StudyWord
 class WordFactory extends ItemFactory {
-  // Item Factory Constructor
+  /// Word Factory Constructor
   const WordFactory();
 
   @override

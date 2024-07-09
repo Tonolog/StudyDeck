@@ -15,10 +15,11 @@ class StudyPage extends StatefulWidget {
   State<StudyPage> createState() => _StudyPage();
 }
 
-// Class: _StudyPage, state management and UI for StudyPage
+/// Class: _StudyPage, state management and UI for StudyPage
 class _StudyPage extends State<StudyPage> {
   int index = 0;
-  // The database
+
+  /// The database
   late Realm realm;
   late RealmResults<StudyCard> studycards;
   late List<Flashcard> theCards =
@@ -28,7 +29,8 @@ class _StudyPage extends State<StudyPage> {
   @override
   void initState() {
     super.initState();
-    // Configure database
+
+    /// Configure database
     final config =
         Configuration.local([StudyCard.schema, StudyCardItem.schema]);
     realm = Realm(config);
@@ -56,7 +58,7 @@ class _StudyPage extends State<StudyPage> {
               const SizedBox(width: 20),
               ElevatedButton.icon(
                   onPressed: () {
-                    // User flips through flash cards, currently doesn't reset flip
+                    /// User flips through flash cards, currently doesn't reset flip
                     setState(() {
                       index = (index + 1) % theCards.length;
                       currCard = theCards[index];

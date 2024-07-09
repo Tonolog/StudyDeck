@@ -3,8 +3,9 @@ import 'package:study_deck/flashcards/card_content/cardItem_factories/item_facto
 import 'package:study_deck/flashcards/card_storage_schema/studycard.dart';
 import 'package:study_deck/flashcards/card_content/card_items/study_translation.dart';
 
+///  Class: Translation Factory, convert realm L1 translation string to StudyTranslation
 class TranslationFactory extends ItemFactory {
-  // Item Factory Constructor
+  /// Translation Factory Constructor
   const TranslationFactory();
 
   @override

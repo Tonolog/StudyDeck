@@ -3,8 +3,9 @@ import 'package:study_deck/flashcards/card_content/cardItem_factories/item_facto
 import 'package:study_deck/flashcards/card_storage_schema/studycard.dart';
 import 'package:study_deck/flashcards/card_content/card_items/study_definition.dart';
 
+///  Class: DefinitationFactory, convert realm definition string to StudyDefinition
 class DefinitionFactory extends ItemFactory {
-  // Item Factory Constructor
+  /// Definition Factory Constructor
   const DefinitionFactory();
 
   @override

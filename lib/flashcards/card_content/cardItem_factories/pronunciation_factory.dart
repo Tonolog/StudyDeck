@@ -3,8 +3,9 @@ import 'package:study_deck/flashcards/card_content/cardItem_factories/item_facto
 import 'package:study_deck/flashcards/card_storage_schema/studycard.dart';
 import 'package:study_deck/flashcards/card_content/card_items/study_pronunciation.dart';
 
+/// Class: Pronunciation, convert realm pronunciation string to StudyPronunciation
 class PronunciationFactory extends ItemFactory {
-  // Item Factory Constructor
+  /// Pronunciation Factory Constructor
   const PronunciationFactory();
 
   @override

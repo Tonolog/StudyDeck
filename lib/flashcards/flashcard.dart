@@ -20,12 +20,12 @@ class Flashcard extends StatefulWidget {
   State<Flashcard> createState() => _Flashcard();
 }
 
-// Class: _Flashcard, state management and UI for Flashcard
+/// Class: _Flashcard, state management and UI for Flashcard
 class _Flashcard extends State<Flashcard> {
   @override
   Widget build(BuildContext context) {
     if (!widget.reverse) {
-      // Default Format, items marked to appear on front, do appear on front
+      /// Default Format, items marked to appear on front, do appear on front
       return FlipCard(
           key: UniqueKey(),
           fill: Fill.fillBack,
@@ -48,7 +48,7 @@ class _Flashcard extends State<Flashcard> {
             ),
           ));
     } else {
-      // Flipped Format, items marked to appear on front, appear on back
+      /// Flipped Format, items marked to appear on front, appear on back
       return FlipCard(
           key: UniqueKey(),
           fill: Fill.fillBack,
@@ -73,7 +73,7 @@ class _Flashcard extends State<Flashcard> {
     }
   }
 
-  // Brief: define visual appearance of flashcard
+  /// Brief: define visual appearance of flashcard
   BoxDecoration decorate() {
     return const BoxDecoration(
         color: Color.fromARGB(255, 161, 161, 255),
@@ -86,7 +86,7 @@ class _Flashcard extends State<Flashcard> {
         ));
   }
 
-  // Brief: define size of flashcard
+  /// Brief: define size of flashcard
   BoxConstraints setSize() {
     return const BoxConstraints(
       minWidth: 300,

@@ -1,6 +1,6 @@
 import 'package:study_deck/flashcards/card_content/hard_coded_card_content.dart';
 
-// Will not need these once the list moves to the create card file
+/// Will not need these once the list moves to the create card file
 import 'package:study_deck/flashcards/card_content/card_items/study_audio.dart';
 import 'package:study_deck/flashcards/card_content/card_items/study_definition.dart';
 import 'package:study_deck/flashcards/card_content/card_items/study_picture.dart';

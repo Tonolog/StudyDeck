@@ -13,21 +13,22 @@ class CreateCardPage extends StatefulWidget {
   State<CreateCardPage> createState() => _CreateCardPage();
 }
 
-// Class: _StudyPage, state management and UI for StudyPage
+/// Class: _StudyPage, state management and UI for StudyPage
 class _CreateCardPage extends State<CreateCardPage> {
   bool? isChecked = false;
 
-  // Controllers for text fields
+  /// Controllers for text fields
   final TextEditingController frontController = TextEditingController();
   final TextEditingController backController = TextEditingController();
 
-  // The database
+  /// The database
   late Realm realm;
 
   @override
   void initState() {
     super.initState();
-    // Configure database
+
+    /// Configure database
     final config =
         Configuration.local([StudyCard.schema, StudyCardItem.schema]);
     realm = Realm(config);
@@ -104,8 +105,9 @@ class _CreateCardPage extends State<CreateCardPage> {
                     ),
                   ]),
             ]),
-            const SizedBox(
-                height: 20), // Add some space between the row and the button
+            const SizedBox(height: 20),
+
+            /// Add some space between the row and the button
             ElevatedButton(
                 child: const Text("Submit"),
                 onPressed: () {
@@ -115,22 +117,42 @@ class _CreateCardPage extends State<CreateCardPage> {
 
                   // Add to database
                   final newCard = StudyCard(
-                    ObjectId(), // id
-                    "Sample Deck", // deck name
+                    ObjectId(),
+
+                    /// id
+                    "Sample Deck",
+
+                    /// deck name
                     frontContent: [
                       StudyCardItem(
-                        ObjectId(), // id
-                        "StudyWord", // widget name
-                        frontText, // content
-                        true, // isOnFront
+                        ObjectId(),
+
+                        /// id
+                        "StudyWord",
+
+                        /// widget name
+                        frontText,
+
+                        /// content
+                        true,
+
+                        /// isOnFront
                       ),
                     ],
                     backContent: [
                       StudyCardItem(
-                        ObjectId(), // id
-                        "StudyDefinition", // widget name
-                        backText, // content
-                        false, // isOnFront
+                        ObjectId(),
+
+                        /// id
+                        "StudyDefinition",
+
+                        /// widget name
+                        backText,
+
+                        /// content
+                        false,
+
+                        /// isOnFront
                       ),
                     ],
                   );

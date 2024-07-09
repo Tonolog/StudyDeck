@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:study_deck/flashcards/card_content/card_item.dart';
+import 'package:study_deck/flashcards/card_content/card_items/card_item.dart';
 
-/*  Class: StudyDefinition, functionality of StudyWord's definition
+/*  Class: StudyDefinition, string widget handles vocab definition
     Parameters: isOnFront,  bool,   see Item doc
                 definition, String, text to be displayed on card
 */

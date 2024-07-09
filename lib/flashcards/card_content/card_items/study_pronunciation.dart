@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:study_deck/flashcards/card_content/card_item.dart';
+import 'package:study_deck/flashcards/card_content/card_items/card_item.dart';
 
-/*  Class: StudyPronunciation, functionality of StudyWord's pronunciation
+/*  Class: StudyPronunciation, String Widget handles written pronunciation
     Parameters: isOnFront,      bool,   see Item doc
-                pronunciation,  String, RichText to be displayed on card
+                pronunciation,  String, text to be displayed on card
 */
 class StudyPronunciation extends StudyItem {
   /// Study Pronunciation Constructor

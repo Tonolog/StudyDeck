@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:study_deck/flashcards/card_content/card_item.dart';
+import 'package:study_deck/flashcards/card_content/card_items/card_item.dart';
 
-/*  Class: StudyPicture, functionality of StudyWord's associated Image
+/*  Class: StudyPicture, Image Widget handles images associated w/ vocab
     Parameters: isOnFront,  bool,   see Item doc
                 imageLink,  String, image link of form "assets/images/..."
 */

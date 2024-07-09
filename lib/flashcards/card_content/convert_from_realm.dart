@@ -11,15 +11,17 @@ import 'package:study_deck/flashcards/card_content/cardItem_factories/pronunciat
 import 'package:study_deck/flashcards/card_content/cardItem_factories/translation_factory.dart';
 import 'package:study_deck/flashcards/card_content/cardItem_factories/word_factory.dart';
 
+///   Class:  ConvertFromRealm, Converts all Realm datatypes to Widgets
 class ConvertFromRealm {
-  // All Items Factory Constructor
+  /// Convert From Realm Constructor
   ConvertFromRealm() {
     addFactory();
   }
 
   List<ItemFactory> allFactories = [];
 
-  // Function: Converts data from RealmDatabase StudyCards into Flutter Widgets
+  /// Function: Converts data from RealmDatabase StudyCards into FlashCard Widgets
+  ///           used specifically to display Flashcards to UI for studying
   List<Flashcard> realmListToFlashcards(RealmResults<StudyCard> theCards) {
     List<Flashcard> flashcards = [];
     List<StudyCard> allCards = theCards.toList();
@@ -32,7 +34,8 @@ class ConvertFromRealm {
     return flashcards;
   }
 
-  // Function: Converts RealmDatabase StudyCardItems into Flutter Widgets
+  /// Function: Converts RealmDatabase StudyCardItems into Flutter Widgets
+  ///           List of widgets can be used for non pre-outlined use
   List<Widget> convertToWidgetList(RealmList<StudyCardItem> cardSide) {
     List<Widget> cardItems = [];
     for (int j = 0; j < cardSide.length; j++) {
@@ -46,6 +49,7 @@ class ConvertFromRealm {
     return cardItems;
   }
 
+  /// Function: addFactory, add all possible Item Widgets to allFactories List
   void addFactory() {
     allFactories.add(const AudioFactory());
     allFactories.add(const DefinitionFactory());
